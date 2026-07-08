@@ -7,7 +7,7 @@ name = "LanguageTool server"
 description.en = "Multilingual grammar, style, and spell checker (API)"
 description.fr = "Correcteur d'orthographe, de grammaire et de style multilingue (API)"
 
-version = "6.6~ynh2"
+version = "6.8~ynh1"
 
 maintainers = ["Jules Bertholet"]
 
@@ -94,10 +94,12 @@ ram.runtime = "800M"
 [resources]
     [resources.sources]
     [resources.sources.main]
-    url = "https://languagetool.org/download/LanguageTool-6.6.zip"
-    sha256 = "53600506b399bb5ffe1e4c8dec794fd378212f14aaf38ccef9b6f89314d11631"
+    url = "https://repo1.maven.org/maven2/org/languagetool/languagetool-standalone/6.8/languagetool-standalone-6.8.zip"
+    sha256 = "f04aecf37e35ef17d44b336da9668a5a3a871edd14bd83a766a7e110b9ebcd21"
 
-    # Autoupdate cannot work because asset is hosted on a custom website
+    # Autoupdate cannot work because upstream no longer publishes release ZIPs on
+    # languagetool.org (switched to daily snapshots); this URL points to Maven
+    # Central instead, which is not a GitHub release.
     # autoupdate.strategy = "latest_github_release"
     # autoupdate.needs_manual_tweaks = true
 
