@@ -45,7 +45,7 @@ The `testing` branch can be tested using:
 sudo yunohost app install https://github.com/YunoHost-Apps/languagetool_ynh/tree/testing
 
 # upgrade an existing install:
-sudo yunohost app upgrade languagetool -u https://github.com/YunoHost-Apps/languagetool_ynh/tree/testing
+sudo yunohost app upgrade languagetool -u https://github.com/ajoe/languagetool_ynh/tree/fix-ngram-oom-extraction
 ```
 
 ### 📚 App packaging documentation
