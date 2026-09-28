@@ -42,10 +42,10 @@ Pull request are welcome and should target the [`testing` branch](https://github
 The `testing` branch can be tested using:
 ```
 # fresh install:
-sudo yunohost app install https://github.com/YunoHost-Apps/languagetool_ynh/tree/testing
+sudo yunohost app install https://github.com/ajoe/languagetool_ynh/tree/master
 
 # upgrade an existing install:
-sudo yunohost app upgrade languagetool -u https://github.com/ajoe/languagetool_ynh/tree/fix-ngram-oom-extraction
+sudo yunohost app upgrade languagetool -u https://github.com/ajoe/languagetool_ynh/tree/master
 ```
 
 ### 📚 App packaging documentation
